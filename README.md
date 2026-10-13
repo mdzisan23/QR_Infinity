@@ -1,69 +1,94 @@
-# OpenQR Studio — Free QR Code Generator
+# QR_Infinity
 
-An attractive, open-source, **100% browser-based QR code generator** that can be hosted on GitHub Pages. No paid APIs, hosting subscriptions, accounts, databases, frameworks, or build tools required.
+### Create it once. Scan it forever.
 
-## Features
+**Free QR codes. No sign-ups. No subscriptions. No expiration dates.**
 
-- QR content types: **link, text, Wi-Fi, email, phone, SMS, contact (vCard)**
-- QR color, background color, and square/rounded patterns
-- Optional center logo (PNG, JPG, WebP, max 2 MB)
-- Download as **PNG** (512, 1024, or 2048 pixels), **SVG** (scalable), or copy a PNG to clipboard (browser permission required)
-- Live preview, error correction, contrast warning, responsive layout
-- Privacy-minded: no ads, login, analytics, cookies, remote calls, or QR-generation servers
-- All third-party code **included locally**, so the published site does not rely on a CDN
+QR_Infinity is a free, open-source QR code generator built to make creating and sharing QR codes simple. Turn a website link, Wi-Fi network, contact information, or plain text into a customized QR code in seconds.
 
-## Publish on GitHub Pages (no coding required)
+No watermarks. No hidden charges. No unnecessary steps.
 
-1. Sign in to [github.com](https://github.com) and select **New repository**.
-2. Name it `qr-generator` (or any name you prefer), choose **Public**, and create it.
-3. **Extract the ZIP file** on your computer. On your repository page, click **Add file → Upload files**, and upload **the contents of the extracted folder**, not the ZIP itself. Keep `index.html`, `styles.css`, `app.js`, and the `assets` and `vendor` folders in the repository root.
-4. Click **Commit changes**.
-5. Open repository **Settings → Pages**. Under **Build and deployment**, choose **Deploy from a branch**. Set **Branch: main** and **Folder: / (root)**, then **Save**.
-6. After GitHub deploys, click **Visit site**, or open `https://YOUR-USERNAME.github.io/qr-generator/`.
+**[Launch QR_Infinity](https://mdzisan23.github.io/QR_Infinity/)**
 
-GitHub Free requires your repository to be public for GitHub Pages. GitHub Pages is subject to GitHub's terms, limits, and policies; free availability cannot be guaranteed permanently.
+---
 
-Official GitHub instructions: https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
+## Why QR_Infinity?
 
-### Want the shortest web address?
+Creating a QR code shouldn't require an account, a subscription, or a payment just to download your own design.
 
-Name the repository `YOUR-USERNAME.github.io` instead. Then the site lives at `https://YOUR-USERNAME.github.io/`.
+QR_Infinity keeps things straightforward. Everything runs directly in your browser, giving you full control over what you create and how you use it.
 
-## Run on your computer
+- **Completely free:** Generate and download as many QR codes as you need.
+- **No built-in expiration:** Your QR codes remain valid without renewal fees.
+- **Privacy first:** QR content is processed in your browser, not sent to a QR generation server.
+- **Your design, your choice:** Customize colors, patterns, and logos.
+- **Ready for any screen:** A clean, responsive experience across desktop and mobile devices.
+- **No account required:** Open the website and start creating.
 
-Open `index.html` in a modern browser. Most features work as a local file. The copy-image feature is safest on HTTPS or `localhost`. To test with a local server:
+## Everything you need, in one place
 
-```sh
-python -m http.server 8000
-```
+### Multiple QR code formats
 
-Then open `http://localhost:8000/`.
+Create QR codes for:
 
-## Change the website name
+- **Website URLs** — Share websites, portfolios, and online resources.
+- **Plain text** — Make information accessible with a quick scan.
+- **Wi-Fi networks** — Let guests connect without manually entering credentials.
+- **Email** — Open a pre-addressed email with an optional subject and message.
+- **Phone numbers** — Make calling easier.
+- **SMS** — Prepare a text message with a recipient and message.
+- **Contact cards** — Share contact information using vCard format.
 
-Search for **OpenQR Studio** and **openqrstudio** in `index.html`, and edit the page `<title>`, logo branding, metadata, and footer to match your preferred project name. Change accent colors through CSS variables in `styles.css`.
+### Make it your own
 
-## Important notes
+Choose foreground and background colors, switch between square and rounded patterns, or add a logo to create a QR code that fits your style.
 
-- These are **static QR codes**. A QR code doesn't expire by itself, but URLs can become unavailable. The encoded URL **cannot be edited** after the QR code is created.
-- A QR code can expose Wi-Fi passwords or contact details to anyone who scans it. Share sensitive codes carefully.
-- Color contrast, logos, and unusual styling can reduce scan reliability; scan-test downloaded images on multiple devices before printing or distributing.
-- No backend API, redirect hosting, QR tracking, or analytics included.
-- Website visits may still be logged by the hosting provider (GitHub Pages), but the application does not transmit the QR text to a server.
+### Download in the format you need
 
-## Project files
+- **PNG:** Export at 512, 1024, or 2048 pixels.
+- **SVG:** Download scalable graphics suitable for print and digital designs.
+- **Copy to clipboard:** Copy your QR image directly when supported by your browser.
 
-```
-index.html           Main website UI
-styles.css           Theme and responsive styles
-app.js               QR logic, previews and downloads
-vendor/qr-code.js    Local MIT QR encoding algorithm
-vendor/LICENSE.txt   Upstream license and attribution
-assets/favicon.svg   Browser tab icon
-.nojekyll            Turns off Jekyll file processing
-LICENSE              License for the site source code
-```
+A live preview lets you see your changes before downloading.
 
-## License
+## Do QR codes really last forever?
 
-Site code and styling: MIT (see `LICENSE`). QR encoder: Kazuhiko Arase, MIT (see `vendor/LICENSE.txt`).
+QR_Infinity creates **static QR codes**, meaning the information is stored directly inside the code rather than through an expiring redirect service.
+
+The QR code itself has no expiration date. Once downloaded, it doesn't depend on QR_Infinity remaining online.
+
+There is one important distinction: if your QR code points to a website, that website must remain accessible for the link to work. Static QR codes also cannot have their encoded destination changed after creation.
+
+## Built with simplicity in mind
+
+QR_Infinity uses HTML, CSS, and JavaScript, with no framework, database, or backend server.
+
+QR generation happens locally in your browser using an open-source encoding library included with the project. The application does not use QR-generation APIs, analytics, advertising scripts, or tracking cookies.
+
+For reliable results, test your QR codes before printing, especially when using custom colors or logos. Avoid putting sensitive information in QR codes intended for public sharing.
+
+## Run your own copy
+
+QR_Infinity is open source. You're welcome to explore the code, suggest improvements, or host your own version.
+
+1. Fork or download this repository.
+2. Keep `index.html`, `styles.css`, `app.js`, and the `assets` and `vendor` folders together.
+3. Open `index.html` in your browser to test locally.
+4. To publish, go to **Settings → Pages** in your GitHub repository.
+5. Select **Deploy from a branch**, choose `main` and `/ (root)`, then save.
+
+No build process or paid hosting service is required for this static website. GitHub Pages availability remains subject to GitHub's policies and usage limits.
+
+## Open source and contributions
+
+QR_Infinity is built on the idea that useful digital tools should be accessible to everyone.
+
+If you find a bug, have an idea, or want to improve the experience, feel free to open an issue or submit a pull request.
+
+**Licensing:** The website source code is released under the MIT License. The included QR encoding library by Kazuhiko Arase is also MIT licensed. See `LICENSE` and `vendor/LICENSE.txt` for details.
+
+---
+
+**QR_Infinity — Create freely. Share easily. Scan anytime.**
+
+Made for everyone. Free to use.
