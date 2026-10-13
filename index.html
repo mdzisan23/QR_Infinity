@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf9f7">
+  <meta name="description" content="QR_Infinity creates free, customizable QR codes for links, text, Wi-Fi, and contacts. No account, no watermark, no subscription. Download PNG or SVG in seconds.">
+  <meta property="og:title" content="QR_Infinity | Free QR Code Generator">
+  <meta property="og:description" content="Create once. Scan anytime. Free static QR codes for links, Wi-Fi, contacts and more — no sign-up or watermark.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mdzisan23.github.io/QR_Infinity/">
+  <link rel="canonical" href="https://mdzisan23.github.io/QR_Infinity/">
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="stylesheet" href="./styles.css">
+  <title>QR_Infinity — Free QR Code Generator</title>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar wrap">
+      <a class="brand" href="#top" aria-label="QR_Infinity home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><rect x="3" y="3" width="11" height="11" rx="2" stroke="currentColor" stroke-width="3"/><rect x="18" y="3" width="11" height="11" rx="2" stroke="currentColor" stroke-width="3"/><rect x="3" y="18" width="11" height="11" rx="2" stroke="currentColor" stroke-width="3"/><rect x="19" y="19" width="4" height="4" rx="1" fill="currentColor"/><rect x="25" y="25" width="4" height="4" rx="1" fill="currentColor"/><rect x="25" y="18" width="4" height="4" rx="1" fill="currentColor"/></svg>
+        </span>
+        <span>QR_<span class="brand-suffix">Infinity</span><span class="brand-dot">.</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="nav-button" href="#generator">Start creating <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="live-dot"></span> QR CODES WITHOUT LIMITS</div>
+          <h1 id="hero-title">Create once.<br><span class="gradient-text">Scan anytime.</span></h1>
+          <p>Create a QR code for any link, message, Wi-Fi network or contact. Customize the design, then download it in seconds. Free to use, no account needed.</p>
+          <div class="hero-proof"><span><span class="check">✓</span> Always free</span><span><span class="check">✓</span> No sign up</span><span><span class="check">✓</span> Your data stays yours</span></div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-halo"></div>
+          <div class="art-card art-card-back"><span class="art-back-lines"></span><span class="art-back-lines short"></span></div>
+          <div class="art-card art-card-front">
+            <div class="fake-qr"><span class="finder f1"></span><span class="finder f2"></span><span class="finder f3"></span><span class="qr-noise"></span></div>
+            <div class="art-card-foot"><span class="art-circle">↗</span><span>Made to connect.</span></div>
+          </div>
+          <div class="float-label"><span class="sparkle">✦</span> Scan. Smile. Share.</div>
+        </div>
+      </section>
+
+      <section id="generator" class="workspace wrap" aria-labelledby="generator-title">
+        <div class="section-heading"><div><span class="section-kicker">YOUR CREATIVE SPACE</span><h2 id="generator-title">Make your QR code</h2><p>Everything you need. Nothing you don't.</p></div><div class="section-tag"><span class="tag-dot"></span> Live preview</div></div>
+        <div class="studio-grid">
+          <div class="editor-card">
+            <div class="panel-header"><div class="panel-icon">01</div><div><h3>Choose your content</h3><p>What should people see when they scan?</p></div></div>
+            <div class="tab-strip" role="tablist" aria-label="QR content type">
+              <button type="button" class="type-tab active" role="tab" aria-selected="true" data-type="url">↗ <span>Link</span></button>
+              <button type="button" class="type-tab" role="tab" aria-selected="false" data-type="text">≡ <span>Text</span></button>
+              <button type="button" class="type-tab" role="tab" aria-selected="false" data-type="wifi">◉ <span>Wi-Fi</span></button>
+              <button type="button" class="type-tab" role="tab" aria-selected="false" data-type="email">✉ <span>Email</span></button>
+              <button type="button" class="type-tab" role="tab" aria-selected="false" data-type="phone">☎ <span>Phone</span></button>
+              <button type="button" class="type-tab" role="tab" aria-selected="false" data-type="sms">▤ <span>SMS</span></button>
+              <button type="button" class="type-tab" role="tab" aria-selected="false" data-type="contact">♙ <span>Contact</span></button>
+            </div>
+
+            <div class="content-panels" id="content-panels">
+              <div class="content-panel active" data-panel="url" role="tabpanel">
+                <label for="url-input">Your website link</label>
+                <div class="input-icon-wrap"><span class="field-icon">↗</span><input id="url-input" type="text" inputmode="url" autocomplete="url" spellcheck="false" value="https://example.com" placeholder="https://yourwebsite.com" maxlength="2000"></div>
+                <p class="help-text">Paste a complete link, or type example.com — we'll add https:// for you.</p>
+              </div>
+              <div class="content-panel" data-panel="text" role="tabpanel" hidden>
+                <label for="text-input">Text to encode</label><textarea id="text-input" rows="4" placeholder="Write a message, a quote, or anything you like..." maxlength="2400"></textarea>
+              </div>
+              <div class="content-panel" data-panel="wifi" role="tabpanel" hidden>
+                <div class="two-col"><div><label for="wifi-ssid">Network name (SSID)</label><input id="wifi-ssid" placeholder="Coffee Shop Wi-Fi" maxlength="100"></div><div><label for="wifi-encryption">Security</label><select id="wifi-encryption"><option value="WPA">WPA / WPA2 / WPA3</option><option value="WEP">WEP</option><option value="nopass">No password</option></select></div></div>
+                <div id="wifi-password-field"><label for="wifi-password">Wi-Fi password</label><input id="wifi-password" type="text" placeholder="Your Wi-Fi password" maxlength="100"></div>
+                <label class="check-field"><input id="wifi-hidden" type="checkbox"> Hidden network</label>
+                <p class="help-text">Anyone scanning this code may be able to see your Wi-Fi details. Share carefully.</p>
+              </div>
+              <div class="content-panel" data-panel="email" role="tabpanel" hidden>
+                <label for="email-to">Email address</label><input id="email-to" type="email" placeholder="hello@example.com" maxlength="254">
+                <label for="email-subject">Subject (optional)</label><input id="email-subject" placeholder="Let's connect" maxlength="150">
+                <label for="email-body">Message (optional)</label><textarea id="email-body" rows="3" placeholder="Hello there!" maxlength="1500"></textarea>
+              </div>
+              <div class="content-panel" data-panel="phone" role="tabpanel" hidden>
+                <label for="phone-input">Phone number</label><input id="phone-input" type="tel" placeholder="+1 555 012 3456" maxlength="40">
+                <p class="help-text">Scanning this QR code opens a phone's dialer.</p>
+              </div>
+              <div class="content-panel" data-panel="sms" role="tabpanel" hidden>
+                <label for="sms-to">Mobile number</label><input id="sms-to" type="tel" placeholder="+1 555 012 3456" maxlength="40">
+                <label for="sms-body">Message (optional)</label><textarea id="sms-body" rows="3" placeholder="Hey!" maxlength="500"></textarea>
+              </div>
+              <div class="content-panel" data-panel="contact" role="tabpanel" hidden>
+                <div class="two-col"><div><label for="contact-name">Full name</label><input id="contact-name" placeholder="Alex Morgan" maxlength="100"></div><div><label for="contact-org">Organization</label><input id="contact-org" placeholder="Your company" maxlength="100"></div></div>
+                <div class="two-col"><div><label for="contact-phone">Phone (optional)</label><input id="contact-phone" type="tel" placeholder="+1 555 0123" maxlength="60"></div><div><label for="contact-email">Email (optional)</label><input id="contact-email" type="email" placeholder="alex@example.com" maxlength="254"></div></div>
+                <label for="contact-website">Website (optional)</label><input id="contact-website" type="url" placeholder="https://example.com" maxlength="500">
+              </div>
+            </div>
+
+            <div class="panel-divider"></div>
+            <div class="panel-header settings-header"><div class="panel-icon">02</div><div><h3>Make it yours</h3><p>A little personality goes a long way.</p></div></div>
+            <div class="customize-grid">
+              <div class="setting-group"><label for="foreground-color">QR color</label><div class="color-input"><input type="color" id="foreground-color" value="#24213a" aria-label="QR foreground color"><span id="foreground-hex">#24213A</span></div></div>
+              <div class="setting-group"><label for="background-color">Background</label><div class="color-input"><input type="color" id="background-color" value="#ffffff" aria-label="QR background color"><span id="background-hex">#FFFFFF</span></div></div>
+              <div class="setting-group"><label for="dot-style">Pattern</label><select id="dot-style"><option value="square">Classic squares</option><option value="rounded" selected>Soft corners</option></select></div>
+              <div class="setting-group"><label for="code-size">Download size</label><select id="code-size"><option value="512">512 × 512 px</option><option value="1024" selected>1024 × 1024 px</option><option value="2048">2048 × 2048 px</option></select></div>
+            </div>
+            <div class="logo-upload-wrap"><div class="logo-upload-heading"><div><strong>Center logo <span class="optional">Optional</span></strong><p>Add your own image to the middle of the code.</p></div><label for="logo-upload" class="upload-button">+ Add logo</label><input type="file" id="logo-upload" accept="image/png,image/jpeg,image/webp" hidden></div><div class="logo-added" id="logo-added" hidden><span id="logo-filename"></span><button type="button" id="remove-logo" class="mini-link">Remove</button></div></div>
+            <div class="advanced-row"><button type="button" class="advanced-toggle" id="advanced-toggle" aria-expanded="false" aria-controls="advanced-options">Advanced settings <span id="advanced-chevron">⌄</span></button><button type="button" class="mini-link" id="reset-button">Reset design ↺</button></div>
+            <div id="advanced-options" class="advanced-options" hidden><label for="error-correction">Error correction</label><select id="error-correction"><option value="M">Standard (M)</option><option value="Q">Strong (Q)</option><option value="H">Maximum (H)</option></select><p class="help-text">With a center logo, maximum error correction is enabled automatically. Always scan-test before printing.</p></div>
+          </div>
+
+          <aside class="preview-card" aria-label="QR code preview and downloads">
+            <div class="preview-top"><div><div class="preview-kicker"><span class="preview-live-dot"></span> LIVE PREVIEW</div><h3>Looking good already.</h3><p>Your QR code updates as you type.</p></div><span class="preview-sparkle" aria-hidden="true">✳</span></div>
+            <div class="qr-stage"><div class="qr-paper"><canvas id="qr-canvas" width="520" height="520" role="img" aria-label="Your generated QR code"></canvas><div id="preview-empty" class="preview-empty" hidden><span aria-hidden="true">▦</span><p>Add some content to<br>see your QR code here.</p></div></div><div class="qr-stage-decoration" aria-hidden="true">✧ MADE WITH QR_INFINITY</div></div>
+            <div class="qr-meta"><div class="status-line" id="qr-status" role="status" aria-live="polite"><span class="status-dot"></span> Ready to scan</div><span id="qr-dimensions">1024 × 1024 px</span></div>
+            <div class="contrast-warning" id="contrast-warning" hidden><span>!</span> These colors have low contrast. The code may be difficult to scan.</div>
+            <div class="download-stack"><button type="button" class="primary-download" id="download-png"><span>↓</span> Download PNG <span class="button-arrow">↗</span></button><button type="button" class="secondary-download" id="download-svg">↓ Download SVG <span class="svg-info">Vector · Any size</span></button><button type="button" class="copy-image" id="copy-image">▢ Copy QR image</button></div>
+            <div class="privacy-note"><span class="privacy-icon">♧</span><p><strong>Private by design.</strong> Your QR data and images are processed on your device. Nothing is sent to a QR generation server.</p></div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="features" class="features-section wrap" aria-labelledby="features-title"><div class="center-heading"><span class="section-kicker">SMALL TOOL, BIG POSSIBILITIES</span><h2 id="features-title">Everything you need to connect.</h2><p>Powerful features, minus the complicated stuff.</p></div><div class="features-grid"><article class="feature"><div class="feature-symbol violet">✦</div><h3>Design your way</h3><p>Choose your colors, pick a pattern, and give every QR code its own personality.</p></article><article class="feature"><div class="feature-symbol peach">▣</div><h3>Made for any moment</h3><p>Share websites, Wi-Fi, contacts, messages, phone numbers, and more.</p></article><article class="feature"><div class="feature-symbol mint">↓</div><h3>Download and go</h3><p>Get a crisp PNG or scalable SVG, ready for your screen, sticker, or poster.</p></article><article class="feature"><div class="feature-symbol sky">◇</div><h3>Privacy comes first</h3><p>No registration or tracking scripts. Your content is encoded right in your browser.</p></article></div></section>
+
+      <section id="how-it-works" class="how-section wrap"><div class="how-left"><span class="section-kicker">IT'S REALLY THAT EASY</span><h2>Three steps.<br><em>That's it.</em></h2><p>Your next QR code is just a few clicks away. No technical skills required.</p><a href="#generator" class="start-link">Create yours now <span>↗</span></a></div><div class="steps"><div class="step"><span class="step-index">01</span><div><h3>Choose what to share</h3><p>Paste your link or enter the text, Wi-Fi network, or contact details.</p></div></div><div class="step"><span class="step-index">02</span><div><h3>Get creative</h3><p>Personalize the colors, pattern, size, or even add a small logo.</p></div></div><div class="step"><span class="step-index">03</span><div><h3>Download and share</h3><p>Save your QR code and use it anywhere. Remember to test it first!</p></div></div></div></section>
+
+      <section class="faq-section wrap" id="faq"><div class="center-heading"><span class="section-kicker">GOOD TO KNOW</span><h2>A few quick answers.</h2></div><div class="faq-grid"><details><summary>Are these QR codes really free?<span>+</span></summary><p>Yes. This noncommercial website is free to use, with no paid features or accounts.</p></details><details><summary>Will the QR codes ever expire?<span>+</span></summary><p>Static QR codes have no built-in expiration date. The linked webpage or resource must still exist for the link to work.</p></details><details><summary>Can I change the link after downloading?<span>+</span></summary><p>No. These are static QR codes; the destination is encoded inside the image. To use a different link, make a new code. A redirect URL you control can provide flexibility.</p></details><details><summary>Do you store my data?<span>+</span></summary><p>No. This generator processes QR content in your browser and includes no tracking scripts or QR generation service. The website host may still log normal website requests.</p></details></div></section>
+    </main>
+    <footer class="footer"><div class="wrap footer-inner"><div><a href="#top" class="footer-brand">QR_<span>Infinity.</span></a><p>Free, static QR codes. Yours to keep.</p></div><div class="footer-end"><span>Made to be shared, not sold. ✳</span><a href="#top">Back to top ↑</a></div></div></footer>
+  </div>
+  <div class="toast" role="status" aria-live="polite" id="toast"></div>
+  <script src="./vendor/qr-code.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
