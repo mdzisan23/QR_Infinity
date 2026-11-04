@@ -33,45 +33,6 @@ Choose a foreground and background color, switch between classic and rounded mod
 
 To ensure scan reliability, test customized codes before printing. Low contrast and large center logos can make a QR code harder to scan. QR codes containing private contact details or Wi-Fi passwords should be shared carefully.
 
-## Publish this website on GitHub Pages
-
-This ZIP is ready for the existing **[mdzisan23/QR_Infinity](https://github.com/mdzisan23/QR_Infinity)** repository. No build tools or backend required.
-
-1. **Extract** the `QR_Infinity_Complete_Website.zip` file on your computer. Don't upload the ZIP itself.
-2. Open [your GitHub repository](https://github.com/mdzisan23/QR_Infinity) and select **Add file → Upload files**.
-3. Upload **everything inside** the extracted folder to the **repository root**. Replace the old `index.html`, `app.js`, `styles.css`, and `README.md` when prompted. Include both the `vendor` and `assets` folders.
-4. Click **Commit changes**.
-5. If needed, open **Settings → Pages → Build and deployment**. Select **Deploy from a branch**, **main**, and **/ (root)**, then **Save**.
-6. After publishing, visit **https://mdzisan23.github.io/QR_Infinity/**. Allow a few minutes for updates, then hard-refresh (`Ctrl + Shift + R`) if needed.
-
-**Required file location:** `vendor/qr-code.js` must be directly inside the `vendor/` folder in the repository root. If that file isn't uploaded, QR generation will fail.
-
-Your repository root should contain:
-
-```text
-QR_Infinity/
-├── index.html
-├── styles.css
-├── app.js
-├── README.md
-├── LICENSE
-├── .nojekyll
-├── vendor/
-│   ├── qr-code.js
-│   └── LICENSE.txt
-└── assets/
-    └── favicon.svg
-```
-
-## Run it locally
-
-Open `index.html` in a modern browser, or serve it with:
-
-```bash
-python -m http.server 8000
-```
-
-Then open [http://localhost:8000](http://localhost:8000). Clipboard image copying requires a secure context (such as HTTPS or localhost) and may not work in every browser.
 
 ## Contribute
 
